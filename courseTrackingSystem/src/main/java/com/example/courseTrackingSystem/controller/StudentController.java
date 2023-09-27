@@ -1,4 +1,4 @@
-//edited
+//file đã update
 package com.example.courseTrackingSystem.controller;
 
 import java.util.List;
@@ -76,11 +76,11 @@ public class StudentController {
 		return courseService.getCourse();
 	} 
 	
-//	@PostMapping(path = "/add-student")
-//	@ResponseStatus(code = HttpStatus.CREATED)
-//	public void addStudent(@RequestBody Student student) {
-//		studentService.addStudent(student);
-//	}
+	@PostMapping(path = "/add-student")
+	@ResponseStatus(code = HttpStatus.CREATED)
+	public void addStudent(@RequestBody Student student) {
+		studentService.addStudent(student);
+	}
 	
 	@PostMapping(path = "/add-student-detail")
 	@ResponseStatus(code = HttpStatus.CREATED)
